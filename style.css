@@ -1,0 +1,178 @@
+body{ 
+    background-color: antiquewhite;
+    max-height: 150%;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: tomato;
+    display: inline-block;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: hotpink;
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: royalblue;
+    display: inline-block;
+}
+h4{
+    font-size: 15px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+button{
+        background-color: lightskyblue;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin:10px;
+        width: 90px;
+        height: 40px;
+}
+
+#footer{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    font-size: 10px;
+}
+#elenco{
+    padding-bottom: 30px;
+    padding-top: 0px;
+}
+
+table {
+    background-color: azure;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+th{
+    background-color: burlywood;
+    padding: 8px;
+    background-color: rgb(224, 223, 223);
+    text-align: left;
+    border-bottom: 1px solid rgb(131, 131, 131);
+    border-top: 1px solid rgb(131, 131, 131);
+    border-right: 1px solid rgb(131, 131, 131);
+    border-left: 1px solid rgb(131, 131, 131);
+}
+  
+tr:hover {background-color:#f5f5f5;}
+
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+ul {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    
+}
+ul li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    padding-top: 20px;
+}
+ul li::before {
+    content: counter(my-awesome-counter) ")";
+    color:tomato;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+}
+
+
+  
+#input{
+    size: 30px;
+}
+
+
+/*
+header{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 15px;
+    color: tomato;
+    font-weight: bold;
+}
+*/
+
+
+/*
+
+<?php
+    $query = "SELECT * FROM artista;";
+    $result = mysqli_query($conn, $query);
+    $resultCheck = mysqli_num_rows($result);
+    if($resultCheck > 0){
+        echo "<table>";
+        echo "<caption> QUERY ...</caption>";
+        echo "<tr>";
+        echo "<th> ID </th>";
+        echo "<th> Cognome </th>";
+        echo "<th> Nome </th>";
+        echo "<th> Nazionalià </th>";
+        echo "<th> Data nascita </th>";
+        echo "<th> Data morte </th>";
+        echo "</tr>";
+
+        while($row = mysqli_fetch_assoc($result)){
+
+            echo "<tr>";
+            echo "<td> $row[id_a] </td>";
+            echo "<td> $row[cognome_a]</td>";
+            echo "<td> $row[nome_a]</td>";
+            echo "<td> $row[nazionalità]</td>";
+            echo "<td> $row[data_nascita]</td>";
+            echo "<td> $row[data_morte]</td>";
+            echo "</tr>";
+        
+        }
+        echo "</table>";
+
+    } else {
+        echo "Process Failed.";
+    }
+    mysqli_close($conn);
+?>
+
+*/
+
+
+
+          
